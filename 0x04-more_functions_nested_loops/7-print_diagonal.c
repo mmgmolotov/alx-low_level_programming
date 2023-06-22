@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-  * print_diagonal - function that draws a straight line in the terminal
-  * @n: number of times to print diagonal lines
-  *
-  * Return: void
-  */
+ * print_diagonal - function that draws a straight line in the terminal
+ * @n: number of times to print diagonal lines
+ *
+ * Return: void
+ */
 void print_diagonal(int n)
 {
 	int x, y;
