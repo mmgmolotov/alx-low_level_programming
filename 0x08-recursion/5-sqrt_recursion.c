@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * sqrt2 - Makes evaluate from 1 to n
+ * sqrt_n - Makes evaluate from 1 to n
  * @a: same num as n
  * @b: number that iterates from 1 to n
  *
