@@ -1,35 +1,55 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
+#include <ctype.h>
 /**
- * main - mul two positive numbers
- * @argc: n arguments
- * @argv: args
+ * multiply_numbers - mul numbers
+ * @num1: arg
+ * @num2: arg
+ *
+ * Return: result
+ */
+int multiply_numbers(char *num1, char *num2)
+{
+	int number1, number2, result, i;
+
+	for (i = 0; num1[i] != '\0'; i++)
+	{
+		if (!isdigit(num1[i]))
+		{
+			printf("Error\n");
+			exit(98);
+		}
+	}
+	for (i = 0; num2[i] != '\0'; i++)
+	{
+		if (!isdigit(num2[i]))
+		{
+			printf("Error\n");
+			exit(98);
+		}
+	}
+	number1 = atoi(num1);
+	number2 = atoi(num2);
+	result = number1 * number2;
+	return (result);
+}
+/**
+ * main - program that multiplies two positive numbers
+ * @argc:args
+ * @argv:args
+ *
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	unsigned long mul;
-	int i, j;
+	int result;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
-		exit(98);
+		return (98);
 	}
-
-	for (i = 1; i < argc; i++)
-	{
-		for (j = 0; argv[i][j] != '\0'; j++)
-		{
-			if (argv[i][j] > 57 || argv[i][j] < 48)
-			{
-				printf("Error\n");
-				exit(98);
-			}
-		}
-	}
-	mul = atol(argv[1]) * atol(argv[2]);
-	printf("%lu\n", mul);
+	result = multiply_numbers(argv[1], argv[2]);
+	printf("%d\n", result);
 	return (0);
 }
