@@ -1,5 +1,8 @@
 #include "main.h"
 #include <ctype.h>
+#include <stddef.h>
+#include <string.h>
+#include <stdlib.h>
 
 int num_checker(char *num);
 char *multiply(char *num1, char *num2, char *result);
