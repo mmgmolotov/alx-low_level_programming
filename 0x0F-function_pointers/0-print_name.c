@@ -2,7 +2,7 @@
 /**
  * print_name - function that print a name
  * @name:arg (name to print)
- * @f:function that print 
+ * @f:function that print
  *
  * Return: void
  */
