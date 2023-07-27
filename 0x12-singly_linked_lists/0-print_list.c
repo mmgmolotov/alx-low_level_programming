@@ -3,7 +3,7 @@
 #include <stddef.h>
 /**
  * print_list - function that prints all the elements of a list_t list.
- * @h: struct list_s
+ * @h: ptr to the list
  *
  * Return: number of nodes
  */
