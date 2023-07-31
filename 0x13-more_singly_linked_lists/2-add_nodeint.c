@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * addnodeint -  function that adds a new node at
+ * add_nodeint -  function that adds a new node at
  * the beginning of a listint_t list.
  * @head:ptr to the head list
  * @n: ptr to the list
