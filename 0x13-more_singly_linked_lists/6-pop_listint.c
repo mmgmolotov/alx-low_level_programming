@@ -3,7 +3,7 @@
  * pop_listint -  function that deletes the head node
  * of a listint_t linked list
  * @head: ptr to the list
- * Return 0 if empty otherwise 1
+ * Return: 0 if empty otherwise 1
  */
 int pop_listint(listint_t **head)
 {
