@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * reverse_listint -function that  prints
+ * print_listint_safe -function that  prints
  * a listint_t linked list.
  * @head: ptr to the list.
  * Return: number of nodes in the list.
